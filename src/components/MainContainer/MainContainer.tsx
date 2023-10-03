@@ -1,9 +1,8 @@
 import React from "react";
-import { useForm, UseFormReturn, FieldValues } from "react-hook-form";
 
 import styles from "./MainContainer.module.scss";
 import { Navigation } from "../Navigation";
-import { StepType, useStepStore } from "../../store/store";
+import { useStepStore } from "../../store/store";
 import { YourInfo } from "../YourInfo";
 import { Title } from "../Title";
 import { SelectPlan } from "../SelectPlan";
