@@ -1,0 +1,25 @@
+.toggleComponent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.span {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: color 300ms ease-out;
+}
+
+.spanUnchecked {
+  color: var(--colorCoolGray);
+  transition: color 300ms ease-out;
+}

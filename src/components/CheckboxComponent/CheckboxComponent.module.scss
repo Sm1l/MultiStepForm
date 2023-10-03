@@ -1,0 +1,75 @@
+.checkboxComponent {
+  display: flex;
+  //   flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--colorLightGray);
+  border-radius: 10px;
+  width: 100%;
+  padding: 12px;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.checkboxComponentActive {
+  background-color: var(--colorMagnolia);
+  border: 1px solid var(--colorPurplishBlue);
+}
+
+.checkbox {
+  cursor: pointer;
+}
+
+.title {
+}
+
+.flexContainer {
+  display: flex;
+  gap: 10px;
+}
+.priceContainer {
+  color: var(--colorPurplishBlue);
+}
+
+.text {
+  color: var(--colorCoolGray);
+}
+
+.customCheckbox {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--colorLightGray);
+  border-radius: 20%;
+  transition: background-color 300ms ease-out;
+  background: url(/src/assets/images/icon-checkmark.svg) no-repeat center;
+}
+
+.checkboxContainer {
+  align-self: center;
+}
+
+.checkbox {
+  position: absolute;
+  display: none;
+  appearance: none;
+}
+
+.checkboxContainer .checkbox:checked + .customCheckbox {
+  border: 1px solid var(--colorPurplishBlue);
+  background-color: var(--colorPurplishBlue);
+  transition: background-color 300ms ease-out;
+}
+
+@media (min-width: 600px) {
+  .checkboxComponent {
+    padding: 20px;
+    gap: 20px;
+  }
+  .flexContainer {
+    gap: 20px;
+  }
+}

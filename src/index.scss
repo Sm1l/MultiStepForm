@@ -1,0 +1,68 @@
+@import-normalize;
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 1rem;
+
+  color: var(--colorMarineBlue);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  //*colors
+  //*primary
+  --colorMarineBlue: #02295a;
+  --colorPurplishBlue: #473dff;
+  --colorPastelBlue: #adbeff;
+  --colorLightBlue: #bfe2fd;
+  --colorStrawberryRed: #ed3548;
+
+  //*neytral
+  --colorCoolGray: #9699ab;
+  --colorLightGray: #d6d9e6;
+  --colorMagnolia: #f0f6ff;
+  --colorAlabaster: #fafbff;
+  --colorWhite: #ffffff;
+}
+
+@media (max-width: 600px) {
+  :root {
+    font-size: 0.9rem;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+input {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  &:focus {
+    outline: none;
+    border: 1px solid var(--colorPurplishBlue);
+  }
+}

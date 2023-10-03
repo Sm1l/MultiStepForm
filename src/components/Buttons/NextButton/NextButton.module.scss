@@ -1,0 +1,18 @@
+.nextButton {
+  text-transform: capitalize;
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: transparent;
+  font-weight: 500;
+  transition: color 300ms ease-out, opacity 300ms ease-out;
+}
+
+.nextButton {
+  color: var(--colorWhite);
+  justify-self: end;
+  background-color: var(--colorMarineBlue);
+  &:hover {
+    opacity: 0.8;
+  }
+}

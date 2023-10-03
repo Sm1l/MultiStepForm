@@ -1,0 +1,19 @@
+.backButton {
+  text-transform: capitalize;
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: transparent;
+  font-weight: 500;
+  transition: color 300ms ease-out, opacity 300ms ease-out;
+}
+
+.backButton {
+  grid-area: back;
+  color: var(--colorCoolGray);
+  align-self: flex-end;
+  justify-self: flex-start;
+  &:hover {
+    color: var(--colorMarineBlue);
+  }
+}

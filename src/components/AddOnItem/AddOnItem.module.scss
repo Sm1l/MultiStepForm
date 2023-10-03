@@ -1,0 +1,13 @@
+.addOnItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.addOnText {
+  text-transform: capitalize;
+}
+
+.addOnPrice {
+  color: var(--colorMarineBlue);
+}

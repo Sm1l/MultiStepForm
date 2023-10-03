@@ -1,0 +1,54 @@
+.planComponent {
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+  border: 1px solid var(--colorLightGray);
+  border-radius: 10px;
+  width: 100%;
+  padding: 15px;
+  gap: 15px;
+  cursor: pointer;
+  &:hover {
+    border: 1px solid var(--colorPurplishBlue);
+  }
+}
+
+.planComponentActive {
+  border: 1px solid var(--colorPurplishBlue);
+  background-color: var(--colorMagnolia);
+}
+
+.imgContainer {
+}
+
+.plan {
+  display: block;
+  text-transform: capitalize;
+}
+
+.price {
+  display: block;
+  color: var(--colorCoolGray);
+}
+
+.free {
+  font-size: 0.8rem;
+}
+
+.inputRadio {
+  display: none;
+  visibility: hidden;
+}
+
+@media (min-width: 600px) {
+  .planComponent {
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  // .imgContainer {
+  //   padding-bottom: 30px;
+  // }
+}

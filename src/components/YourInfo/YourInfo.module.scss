@@ -1,0 +1,84 @@
+.yourInfo {
+  display: flex;
+  flex-direction: column;
+  // align-items: flex-start;
+  // justify-content: flex-start;
+  width: 100%;
+  min-height: 100%;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+}
+
+.yourInfoForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.inputContainer {
+  display: grid;
+  gap: 5px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-areas:
+    "label error"
+    "input input";
+}
+.label {
+  grid-area: label;
+  justify-self: start;
+  cursor: pointer;
+}
+.error {
+  grid-area: error;
+  justify-self: end;
+  color: var(--colorStrawberryRed);
+}
+.input {
+  grid-area: input;
+  min-height: 50px;
+  border: 1px solid var(--colorLightGray);
+  border-radius: 8px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.inputError {
+  border: 1px solid var(--colorStrawberryRed);
+}
+
+.buttonContainer {
+  align-self: flex-end;
+  // justify-self: end;
+  // justify-self: flex-end;
+}
+
+.nextButton {
+  text-transform: capitalize;
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: transparent;
+  font-weight: 500;
+  transition: color 300ms ease-out, opacity 300ms ease-out;
+}
+
+.nextButton {
+  color: var(--colorWhite);
+  justify-self: end;
+  background-color: var(--colorMarineBlue);
+  &:hover {
+    opacity: 0.8;
+  }
+}

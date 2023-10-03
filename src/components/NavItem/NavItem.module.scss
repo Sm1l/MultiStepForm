@@ -1,0 +1,40 @@
+.navItem {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  text-transform: uppercase;
+  color: var(--colorWhite);
+}
+.button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--colorLightGray);
+  border-radius: 50%;
+  font-weight: 700;
+  background-color: transparent;
+}
+
+.buttonActive {
+  color: var(--colorMarineBlue);
+  background-color: var(--colorLightBlue);
+}
+
+.right {
+  display: none;
+}
+.text {
+  font-size: 0.8rem;
+  color: var(--colorLightGray);
+}
+
+@media (min-width: 900px) {
+  .right {
+    display: block;
+    text-align: start;
+  }
+}
