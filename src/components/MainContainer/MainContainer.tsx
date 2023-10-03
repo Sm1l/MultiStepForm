@@ -26,7 +26,7 @@ const MainContainer: React.FC<MainContainerProps> = () => {
   const step = useStepStore((state) => state.step);
 
   return (
-    <div className={styles.mainContainer}>
+    <main className={styles.mainContainer}>
       <Navigation />
       {step === 1 && (
         <div className={styles.contentContainer}>
@@ -51,7 +51,7 @@ const MainContainer: React.FC<MainContainerProps> = () => {
           <Finishing />
         </div>
       )}
-    </div>
+    </main>
   );
 };
 
