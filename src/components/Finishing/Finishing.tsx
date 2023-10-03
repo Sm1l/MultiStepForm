@@ -67,7 +67,7 @@ const Finishing: React.FC<FinishingProps> = () => {
                 )}
               </div>
               <div className={styles.totalContainer}>
-                <p className={styles.totalText}>Total per month</p>
+                <p className={styles.totalText}>Total (per {billing === "monthly" ? "month" : "year"})</p>
                 <span className={styles.totalPrice}>
                   +{totalPrice}
                   $/
